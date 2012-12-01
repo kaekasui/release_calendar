@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Date:</b>
+  <%= @calendar.date %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @calendar.title %>
+</p>
+
+<p>
+  <b>Content:</b>
+  <%= @calendar.content %>
+</p>
+
+<p>
+  <b>Amazon url:</b>
+  <%= @calendar.amazon_url %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @calendar.user_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_calendar_path(@calendar) %> |
+<%= link_to 'Back', calendars_path %>
