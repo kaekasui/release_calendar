@@ -49,3 +49,4 @@ gem 'omniauth-twitter'
 
 gem 'nokogiri'
 
+gem "watu_table_builder", :require => "table_builder"
