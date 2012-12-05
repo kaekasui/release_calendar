@@ -14,7 +14,7 @@
 ActiveRecord::Schema.define(:version => 20121205161527) do
 
   create_table "articles", :force => true do |t|
-    t.time     "publish_on"
+    t.datetime "publish_on"
     t.string   "title"
     t.text     "content"
     t.string   "amazon_url"

@@ -1,7 +1,7 @@
 class CreateArticles < ActiveRecord::Migration
   def change
     create_table :articles do |t|
-      t.time :publish_on
+      t.timestamp :publish_on
       t.string :title
       t.text :content
       t.string :amazon_url

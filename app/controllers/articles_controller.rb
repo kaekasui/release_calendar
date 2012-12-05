@@ -3,6 +3,7 @@ class ArticlesController < ApplicationController
   # GET /articles.json
   def index
     @articles = Article.all
+    @date = params[:month] ? Date.strptime(params[:month], "%Y-%m") : Date.today
 
     respond_to do |format|
       format.html # index.html.erb
