@@ -42,3 +42,12 @@
 <%= link_to t('.new', :default => t("helpers.links.new")),
             new_calendar_path,
             :class => 'btn btn-primary' %>
+
+<div id=calendar>
+  <%= calendar_for @calendars do |calendar| %>
+    <%= calendar.head('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday' 'Saturday') %>
+    <% calendar.day(day_method: :date) do |date, calendars| %>
+      <%= date.day %>
+    <% end %>
+  <% end %>
+</div>
