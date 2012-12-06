@@ -1,9 +1,9 @@
 ja:
   date:
     order:
-      - :"年"
-      - :"月"
-      - :"日"
+      - :'year'
+      - :'month'
+      - :'day'
     formats:
       default: "%Y/%m/%d"
       month: "%Y年%m月"
