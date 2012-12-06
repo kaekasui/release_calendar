@@ -1,0 +1,33 @@
+ja:
+  date:
+    order:
+      - :"年"
+      - :"月"
+      - :"日"
+    formats:
+      default: "%Y/%m/%d"
+      month: "%Y年%m月"
+  time:
+    formats:
+      default: "%Y/%m/%d %H:%M:%S"
+      very_short: "%m/%d"
+
+  #########
+  # View
+  #########
+  articles:
+    index:
+      sunday: "日"
+      monday: "月"
+      tuesday: "火"
+      wednesday: "水"
+      thursday: "木"
+      friday: "金"
+      saturday: "土"
+
+  #########
+  # Submit
+  #########
+  helpers:
+    links:
+      new: "作成"
