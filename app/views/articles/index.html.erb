@@ -7,12 +7,13 @@
   <%= calendar_for @articles, year: @date.year, month: @date.month do |calendar| %>
     <%= calendar.head(t('.sunday'), t('.monday'), t('.tuesday'), t('.wednesday'), t('.thursday') , t('.friday'), t('.saturday')) %>
     <% calendar.day(day_method: :publish_on) do |date, articles| %>
-      <div class="day"><%= date.day %><a href="#add_article" role="button" class="btn" data-toggle="modal" align="right">+</a></div>
-      <ul>
-        <% articles.each do |article| %>
-          <li><%= link_to article.title, article %></li>
-        <% end %>
-      </ul>
+      <div class="day"><%= date.day %>
+        <ul>
+          <% articles.each do |article| %>
+            <li><a href ="#<%=l article.publish_on %>" role="button" class="btn btn-info" data-toggle="modal"><%= article.title %></a>
+          <% end %>
+        </ul>
+      </div>
     <% end %>
   <% end %>
 </div>

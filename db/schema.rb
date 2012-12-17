@@ -14,17 +14,7 @@
 ActiveRecord::Schema.define(:version => 20121205161527) do
 
   create_table "articles", :force => true do |t|
-    t.datetime "publish_on"
-    t.string   "title"
-    t.text     "content"
-    t.string   "amazon_url"
-    t.integer  "user_id"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
-  create_table "calendars", :force => true do |t|
-    t.date     "date"
+    t.date     "publish_on"
     t.string   "title"
     t.text     "content"
     t.string   "amazon_url"
