@@ -10,10 +10,26 @@
       <div class="day"><%= date.day %>
         <ul>
           <% articles.each do |article| %>
-            <li><a href ="#<%=l article.publish_on %>" role="button" class="btn btn-info" data-toggle="modal"><%= article.title %></a>
-          <% end %>
+            <li><a href ="#article_modal" role="button" class="btn btn-info" data-toggle="modal"><%= article.title %></a>
+         <% end %>
         </ul>
       </div>
     <% end %>
   <% end %>
+</div>
+
+<div id="article_modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">映画ドラえもん のび太と奇跡の島 ～アニマル アドベンチャー～ ブルーレイ＆DVD ファミリーパック版</h3>
+  </div>
+  <div class="modal-body">
+    <p>発売日：2012年12月5日</p>
+    <p>評価：★★★☆☆</p>
+    <p></p>
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+    <button class="btn btn-primary">Save changes</button>
+  </div>
 </div>
